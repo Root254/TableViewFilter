@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="populatingdatafromdatabase.customer_fxml_layoutController">
+   <children>
+      <TableView fx:id="customerDetailsTable" layoutX="14.0" layoutY="14.0" prefHeight="364.0" prefWidth="613.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="customerIDCol" prefWidth="94.0" text="CUSTOMER_ID" />
+          <TableColumn fx:id="discountCodeCol" prefWidth="106.0" text="DISCOUNT_CODE" />
+            <TableColumn fx:id="zipCol" prefWidth="81.0" text="ZIP" />
+            <TableColumn fx:id="nameCol" prefWidth="184.0" text="NAME" />
+            <TableColumn fx:id="emailCol" prefWidth="157.0" text="EMAIL" />
+            <TableColumn fx:id="creditLimitCol" prefWidth="116.0" text="CREDIT_LIMIT" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filterTextField" layoutX="590.0" layoutY="14.0" promptText="Search" />
+   </children>
+</AnchorPane>
